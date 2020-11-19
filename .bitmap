@@ -25,5 +25,29 @@
         "exported": false,
         "lanes": []
     },
-    "version": "14.8.9-dev.130"
+    "envs/react-native": {
+        "files": [
+            {
+                "name": "index.ts",
+                "relativePath": "index.ts",
+                "test": false
+            },
+            {
+                "name": "react-native.extension.ts",
+                "relativePath": "react-native.extension.ts",
+                "test": false
+            },
+            {
+                "name": "webpack.config.js",
+                "relativePath": "webpack/webpack.config.js",
+                "test": false
+            }
+        ],
+        "mainFile": "index.ts",
+        "rootDir": "extensions/react-native",
+        "origin": "AUTHORED",
+        "exported": false,
+        "lanes": []
+    },
+    "version": "14.8.9-dev.150"
 }

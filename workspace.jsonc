@@ -10,7 +10,7 @@
     /**
      * the name of the component workspace. used for development purposes.
      **/
-    "name": "my-workspace-name",
+    "name": "React Native Web Demo",
     /**
      * set the icon to be shown on the Bit server.
      **/
@@ -18,7 +18,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "my-scope"
+    "defaultScope": "teambit.react-native"
   },
   /**
    * main configuration for component dependency resolution.
@@ -30,7 +30,9 @@
     "packageManager": "teambit.dependencies/pnpm",
     "policy": {
       "dependencies": {
-        "@types/react": "16.9.56"
+        "@types/react": "16.9.56",
+        "core-js": "3.7.0",
+        "react-native-web": "0.14.8"
       }
     }
   },
@@ -47,7 +49,10 @@
       /**
        * uncomment to apply the react environment on all components.
        **/
-      "teambit.react-native/react-native": {}
+      "teambit.react-native/envs/react-native": {}
+    },
+    "extensions": {
+      "teambit.harmony/aspect": {}
     }
   }
 }
